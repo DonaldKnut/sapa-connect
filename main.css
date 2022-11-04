@@ -605,6 +605,26 @@ input{
     width: 87px;
 }
 
+.dashboard{
+    margin: 24px 0;
+}
+
+.dashboard a{
+    color: white;
+}
+
+.app-store{
+    width: 100%;
+    padding: 0 19px;
+    height: 170px;
+    background-color: #bb0101;
+}
+
+.sapa-hand{
+    width: 126px;
+    margin: 0 115px;
+}
+
 @media(max-width: 623px){
     form {
         width: 444px;

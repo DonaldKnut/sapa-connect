@@ -724,6 +724,14 @@ button a{
     align-items: center;
 }
 
+.dashboard{
+    margin: 24px 0;
+}
+
+.dashboard a{
+    color: white;
+}
+
 .app-store{
     width: 100%;
     padding: 0 19px;
@@ -733,12 +741,12 @@ button a{
 
 .sapa-hand{
     width: 126px;
+    margin: 0 115px;
 }
 
-/* hr{
-    background: #493b20;
-} */
-
+.app-play__ref{
+    margin: 66px 140px;
+}
 
 @media(max-width: 991px){
     .showcase, .showcase header{
