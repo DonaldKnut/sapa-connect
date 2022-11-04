@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./search.js" defer></script>
+</head>
+<body>
+    <div class="search-wrapper">
+        <label for="search">Search Users</label>
+        <input type="search" placeholder="Place or Zip Code" id="search" data-search>
+        <button></button>
+    </div>
+    <div class="user-cards" data-user-cards-container>
+            
+            <div class="card">
+                <img src="/images//iyan.png" alt="iyan" class="meal">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>Manchester<div class="body" data-body>Iyan</div></div>
+            </div>
+            <div class="card">
+                <img src="/images//banana.png" alt="iyan" class="meal">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>Liverpool<div class="body" data-body>Plantain</div></div>
+            </div>
+            <div class="card">
+                <img src="/images//amala.png" alt="iyan" class="meal">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>Southampton<div class="body" data-body>Amala and Ewedu</div></div>
+            </div>
+            <div class="card">
+                <img src="/images//ewa agoyin.png" alt="iyan" class="meal">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>ipswich<div class="body" data-body>Ewa Agonyin</div></div>
+            </div>
+ a
+            <div class="card">
+                <img src="/images//spaghetti.png" alt="iyan" class="meal">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>Bristol<div class="body" data-body>Plantain</div></div>
+            </div>
+            <div class="card">
+                <img src="/images//rice.png" alt="iyan" class="meal rice">
+                <div class="contact">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="header" data-header>Merseyside<div class="body" data-body>Plantain</div></div>
+            </div>
+    </div>
+    <template data-user-template>
+        <div class="card">
+            <img src="/images//iyan.png" alt="iyan" class="meal">
+            <div class="contact">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="header" data-header>Manchester<div class="body">Iyan</div></div>
+        </div>
+    </template>
+    <footer class="footer">
+        <a href="./index.html">
+            <img src="/images/logo_icon.png" class="logo" alt="logo for cosmos">
+        </a>
+    </footer>
+    <div id="consent-popup" class="hidden">
+        <img src="./images/cookie.png" alt="" class="cookie">
+        <p>By Using this Site you agree to our <a href="#" class="link-consent">Terms & Conditions</a>. Please<a href="#" id="accept" class="link-consent"> Accept</a> these before using our site</p>
+    </div>
+    <script>
+        const getUser = document.querySelector(".location");
+
+        getUser.addEventListener("click", () => {
+        if(!navigator.geolocation){
+            alert("Location is not available");
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition((data) => {
+            console.log(data);
+            const inputValue = document.querySelector("#get-location").value;
+            inputValue.innerHTML = data;
+            const coordinates = {
+                lat: data.coords.latitude,
+                long: data.coords.latitude,
+            }
+            return coordinates;
+        }, error => {
+            alert("could not locate you unfortunately");
+        })
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+
+
+*{
+    font-family: "Antic Slab";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 12px;
+    background: #000000
+}
+
+.header.active{
+    z-index: 10;
+    background-color: #c50c0c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+.sec-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.sec-items li{
+    list-style: none;
+    margin: 0 3px;
+}
+
+.sec-items li a{
+    text-decoration: none;
+    margin: 0 9px;
+    transition: 0.4s;
+}
+
+.sec-items li a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 76vh;
+    background: url(/images//beans_bg.png) center/cover;
+}
+
+.container h1{
+    margin: 32px 0;
+    color: white;
+    text-align: center;
+}
+
+
+.search-btn{
+    margin: 23px 0px;
+    padding: 11px 46px;
+    background: tomato;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.search-btn:hover{
+    background: #055241;
+    color: white;
+}
+
+
+.rate-it{
+   width: 133px;
+}
+
+section{
+    text-align: center;
+    display: flex;
+    background: #055241;
+    /* height: 193px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    background: #fff;
+    width: 600px;
+    border-radius: 7px;
+    padding: 0 11px;
+    height: 55px;
+    align-items: center;
+    display: flex;
+}
+
+.button{
+    margin-top: -40px;
+    cursor: pointer;
+    background: #072c07;
+    color: white;
+    font-family: inherit;
+    position: relative;
+    bottom: 21px;
+    border: none;
+    padding: 10px 39px;
+    box-shadow: inset 0 0 0 0 #c90000;
+    transition: all 0.9s ease-out;
+}
+
+.button:hover{
+    box-shadow: inset 300px 0 0 0 #c50c0c;
+    color: rgb(255, 255, 255);
+}
+
+
+
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form button{
+    background: tomato;
+    padding: 10px 50px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    transition: 0.6s;
+}
+
+form button:hover{
+    background: #055241;
+    color: white;
+}
+
+.form .fa-magnifying-glass{
+    align-self: center;
+    padding: 10px 20px;
+}
+
+.brand__logo{
+    width: 78px;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1111;
+    z-index: 2;
+    color: white;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 38px 9px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+}
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.selected-lang::before{
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/images/Flag_of_the_United_Kingdom.svg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.8;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+    mix-blend-mode: overlay;
+}
+
+.text h2{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+
+
+.text{
+    position: relative;
+    z-index: 100;
+}
+
+.text .button{
+    text-decoration: none;
+}
+
+
+
+.button{
+    margin-top: 40px;
+    cursor: pointer;
+    background: #072c07;
+    color: white;
+    font-family: inherit;
+    position: relative;
+    bottom: -23px;
+    border: none;
+    padding: 10px 39px;
+    box-shadow: inset 0 0 0 0 #c90000;
+    transition: all 0.9s ease-out;
+}
+
+.button:hover{
+    box-shadow: inset 300px 0 0 0 #c50c0c;
+    color: rgb(255, 255, 255);
+}
+
+.fa-great{
+    font-size: 232%;
+    margin: 12px 0;
+    color: white;
+}
+
+.socials{
+    position: absolute;
+    bottom: 20px;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.social-size{
+    font-size: 62px;
+}
+
+
+.socials li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.6s;
+    font-size: 100px;
+}
+
+
+.socials li a:hover{
+    color: #0c2b0c;
+}
+
+.showcases.acive{
+    right: 300px;
+}
+
+
+
+.social li a:hover{
+    transform: scale(1.5) translateY(-15);
+}
+
+
+.menu{
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(177deg, #305530, #750808);
+    padding: 199px 0 140px 90px;
+    top: 0;
+    left: -100%;
+    width: 73%;
+    height: 100%;
+    align-items: center;
+    box-shadow: 7px -10px 53px #750808;
+}
+
+.menu li{
+    list-style: none;
+    margin: 0 0 14px 0;
+}
+
+
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+
+
+
+.links:hover{
+    border: 1.2px solid white;
+    padding: 11px 18px;
+    text-decoration: underline;
+    color: rgb(67, 223, 6);
+}
+
+.menu li a:hover{
+    text-decoration: none;
+}
+
+
+.social-icon{
+    position: absolute;
+    bottom: 20px;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social-icon:hover{
+    color: #750808;
+}
+
+.soc-med{
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+}
+
+
+.social-media__icon a:hover{
+    color: #305530;
+}
+
+
+
+.sec-icon{
+    color: #0c2b0c;
+    font-size: 32px;
+}
+
+.menu.is-active{
+    right: 0;
+}
+
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.bar, .hamburger:after, .hamburger:before{
+    width: 100%;
+    background-color: beige;
+    margin: 5px 0;
+    height: 3px;
+    content: " ";
+    transition: 0.5s;
+    display: block;
+    border-radius: 11px;
+}
+
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-3px, 5px)
+}
+
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-5px, -9px)
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+
+.app-ref{
+    width: 120px;
+    cursor: pointer;
+}
+
+.lang-menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.app-play__ref {
+    width: 51%;
+    z-index: 1;
+    margin: 65px 0;
+}
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(133, 11, 11, 0.863);
+    border-radius: 5px;
+    display: none;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.lang-menu:hover ul{
+    display: block;
+}
+
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+}
+
+
+.lang-menu ul li a{
+   width: 125px;
+   display: block;
+   padding: 5px 10px;
+   text-decoration: none;
+}
+
+
+.lang-menu ul li a::before{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    background-image: url(/images/Flag_of_the_United_Kingdom.svg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #072c07;
+    color: white;
+}
+
+.fr:before{
+    background-image: url(/images/french.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+
+.de:before{
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/de.svg);
+}
+
+.eng:before{
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/gb.svg);
+}
+
+.ae::before{
+    background-image: url(/images/qatar.PNG);
+}
+
+
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .24rem;
+}
+
+input{
+    font-size: 1rem;
+}
+
+.user-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.card{
+    border-radius: 17px;
+    border: 1px solid rgb(255, 255, 255);
+    background: #0c3621e3 ;
+    box-shadow: 5px 4px 7px #7fffd478;
+    padding: 0.5rem;
+    color: rgb(245, 242, 236);
+}
+
+.meal{
+    width: 154px;
+}
+
+.rice{
+    width: 120px;
+}
+
+.user-cards{
+    padding: 30px ;
+}
+
+
+.contact a fa-brands{
+    color: white;
+}
+
+.fa-brands{
+    color: white;
+    transition: 0.4s;
+}
+
+.fa-brands:hover{
+    color: #d6571c;
+}
+
+
+#consent-popup{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.8s ease-in-out;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    padding: 18px 19px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(125deg, #836d45f6, #0d0f0ff8);
+    color: rgb(255, 255, 255);
+}
+
+.link-consent{
+    text-decoration: none;
+    color: wheat;
+    transition:  0.5s;
+}
+
+.link-consent:hover{
+    text-decoration: underline;
+}
+
+
+.hidden{
+    opacity: 0;
+}
+
+
+.cookie{
+    width: 87px;
+}
+
+@media(max-width: 623px){
+    form {
+        width: 444px;
+    }
+    .rate-it {
+        width: 106px;
+    }
+}
+
+@media(max-width: 437px){
+    form {
+        width: 255px;
+    }
+    /* form button {
+        padding: 13px 26px;
+    } */
+    form button {
+        padding: 13px 8px;
+    }
+    .rate-it {
+        width: 106px;
+    }
+}
+
+
+@media(max-width: 322px){
+    .rate-it {
+        width: 72px;
+    }
+    .hamburger {
+        margin: 18px 0;
+    }
+    .menu {
+        width: 82%;
+    }
+    .sec-items li a {
+        font-size: 13px;
+    }
+    .sec-items li {
+        margin: 0 -6px;
+    }
+}
+
+

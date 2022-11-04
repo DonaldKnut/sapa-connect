@@ -1,0 +1,440 @@
+
+
+*{
+    font-family: "Antic Slab";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.brand__logo{
+    width: 78px;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1111;
+    z-index: 2;
+    color: white;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 38px 9px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+}
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.selected-lang::before{
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/images/Flag_of_the_United_Kingdom.svg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.8;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+    mix-blend-mode: overlay;
+}
+
+.text h2{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+
+
+.text{
+    position: relative;
+    z-index: 100;
+}
+
+.text .button{
+    text-decoration: none;
+}
+
+
+
+.button{
+    margin-top: 40px;
+    cursor: pointer;
+    background: #072c07;
+    color: white;
+    font-family: inherit;
+    position: relative;
+    bottom: -23px;
+    border: none;
+    padding: 10px 39px;
+    box-shadow: inset 0 0 0 0 #c90000;
+    transition: all 0.9s ease-out;
+}
+
+.button:hover{
+    box-shadow: inset 300px 0 0 0 #c50c0c;
+    color: rgb(255, 255, 255);
+}
+
+.fa-great{
+    font-size: 232%;
+    margin: 12px 0;
+    color: white;
+}
+
+.socials{
+    position: absolute;
+    bottom: 20px;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.social-size{
+    font-size: 62px;
+}
+
+
+.socials li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.6s;
+    font-size: 100px;
+}
+
+
+.socials li a:hover{
+    color: #0c2b0c;
+}
+
+.showcases.acive{
+    right: 300px;
+}
+
+
+
+.social li a:hover{
+    transform: scale(1.5) translateY(-15);
+}
+
+
+.menu{
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(177deg, #305530, #750808);
+    padding: 199px 0 140px 90px;
+    top: 0;
+    right: -100%;
+    width: 73%;
+    height: 100%;
+    align-items: center;
+    box-shadow: 7px -10px 53px #750808;
+}
+
+.menu li{
+    list-style: none;
+    margin: 0 0 14px 0;
+}
+
+
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+
+
+
+.links:hover{
+    border: 1.2px solid white;
+    padding: 11px 18px;
+    text-decoration: underline;
+    color: rgb(67, 223, 6);
+}
+
+.menu li a:hover{
+    text-decoration: none;
+}
+
+
+.social-icon{
+    position: absolute;
+    bottom: 20px;
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social-icon:hover{
+    color: #750808;
+}
+
+.soc-med{
+    position: absolute;
+    left: 8px;
+    bottom: -1px;
+}
+
+
+.social-media__icon a:hover{
+    color: #305530;
+}
+
+
+
+.sec-icon{
+    color: #0c2b0c;
+    font-size: 32px;
+}
+
+.menu.is-active{
+    left: 0;
+}
+
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.bar, .hamburger:after, .hamburger:before{
+    width: 100%;
+    background-color: beige;
+    margin: 5px 0;
+    height: 3px;
+    content: " ";
+    transition: 0.5s;
+    display: block;
+    border-radius: 11px;
+}
+
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-3px, 5px)
+}
+
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-5px, -9px)
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+
+.app-ref{
+    width: 120px;
+    cursor: pointer;
+}
+
+.lang-menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.app-play__ref {
+    width: 51%;
+    z-index: 1;
+    margin: 65px 0;
+}
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(133, 11, 11, 0.863);
+    border-radius: 5px;
+    display: none;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.lang-menu:hover ul{
+    display: block;
+}
+
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+}
+
+
+.lang-menu ul li a{
+   width: 125px;
+   display: block;
+   padding: 5px 10px;
+   text-decoration: none;
+}
+
+
+.lang-menu ul li a::before{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    background-image: url(/images/Flag_of_the_United_Kingdom.svg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #072c07;
+    color: white;
+}
+
+.fr:before{
+    background-image: url(/images/french.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+
+.de:before{
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/de.svg);
+}
+
+.eng:before{
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/gb.svg);
+}
+
+.ae::before{
+    background-image: url(/images/qatar.PNG);
+}
+
+
+
+
+
+
+@media(max-width: 663px){
+            .showcase, .showcase header{
+                padding: 17px;
+            }
+
+            .text h2{
+                font-size: 1.8em;
+            }
+
+            .text p{
+                margin: 0 0 -5px 0;
+                font-size: 14px;
+            }
+            .social-size {
+                font-size: 43px;
+            }
+
+            .fa-xmark{
+                font-size: 40px;
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 211px;
+            }
+            .app-play__ref{
+                width: 51%;
+                z-index: 1;
+                margin: 65px 0;
+            }
+
+            .selected-lang{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+            .selected-lang::before{
+                content: " ";
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url(/images/Flag_of_the_United_Kingdom.svg.webp);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .menu{
+                width: 80%;
+            }
+
+            .brand__logo {
+                width: 58px;
+            }
+
+            .social-size {
+                font-size: 36px;
+            }
+
+            .menu {
+                padding: 199px 0 140px 44px;
+            }
+}
+
+
