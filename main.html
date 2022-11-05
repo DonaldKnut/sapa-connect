@@ -73,8 +73,8 @@
         <h1>Find the Closest Sapa Connect</h1>
         <hr>
         <form action="#">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Area or Postcode?">
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <input type="text" placeholder="Area or Postcode?" id="search-item" onkeyup="search()">
             <button class="locate-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
         </form>
         <button class="search-btn" id="btn-search"><a href=".user-cards"></a> Search for Connect <i class="fa-solid fa-magnifying-glass-plus"></i></button>
@@ -85,7 +85,7 @@
         <img src="./images/ebay.png" alt="" class="rate-it">
         <img src="./images/bbc.png" alt="" class="rate-it">
     </section>
-    <div class="user-cards" data-user-cards-container>
+    <div class="user-cards" id="user-cards" data-user-cards-container>
             
         <div class="card">
             <img src="/images//iyan.png" alt="iyan" class="meal">
@@ -95,7 +95,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Manchester<div class="body" data-body>Iyan</div></div>
+            <h5 class="header" data-header>Manchester<h5 class="body" data-body>Iyan</h5></h5>
         </div>
         <div class="card">
             <img src="/images//banana.png" alt="iyan" class="meal">
@@ -105,7 +105,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Liverpool<div class="body" data-body>Plantain</div></div>
+            <h5 class="header" data-header>Liverpool<h5 class="body" data-body>Plantain</h5></h5>
         </div>
         <div class="card">
             <img src="/images//amala.png" alt="iyan" class="meal">
@@ -115,7 +115,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Southampton<div class="body" data-body>Amala and Ewedu</div></div>
+            <h5 class="header" data-header>Southampton<h5 class="body" data-body>Amala and Ewedu</h5></h5>
         </div>
         <div class="card">
             <img src="/images//ewa agoyin.png" alt="iyan" class="meal">
@@ -125,7 +125,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>ipswich<div class="body" data-body>Ewa Agonyin</div></div>
+            <h5 class="header" data-header>ipswich<h5 class="body" data-body>Ewa Agonyin</h5></h5>
         </div>
         <div class="card">
             <img src="/images//spaghetti.png" alt="iyan" class="meal">
@@ -135,7 +135,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Bristol<div class="body" data-body>Plantain</div></div>
+            <h5 class="header" data-header>Bristol<h5 class="body" data-body>Spaghetti</h5></h5>
         </div>
         <div class="card">
             <img src="/images//eforiro.png" alt="iyan" class="meal">
@@ -145,7 +145,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Bristol<div class="body" data-body>Plantain</div></div>
+            <h5 class="header" data-header>Bournemouth<h5 class="body" data-body>Semovita</h5></h5>
         </div>
         <div class="card">
             <img src="/images//fufu.png" alt="iyan" class="meal">
@@ -155,7 +155,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Bristol<div class="body" data-body>Plantain</div></div>
+            <h5 class="header" data-header>Bristol<h5 class="body" data-body>Fufu</h5></h5>
         </div>
         <div class="card">
             <img src="/images//amala & egusi.png" alt="iyan" class="meal rice">
@@ -165,7 +165,7 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="header" data-header>Merseyside<div class="body" data-body>Plantain</div></div>
+            <h5 class="header" data-header>Merseyside<h5 class="body" data-body>Amala and Efo</h5></h5>
         </div>
     </div>
     <section class="app-store">

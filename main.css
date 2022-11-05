@@ -543,7 +543,7 @@ input{
 }
 
 .meal{
-    width: 154px;
+    width: 134px;
 }
 
 .rice{
@@ -622,7 +622,8 @@ input{
 
 .sapa-hand{
     width: 126px;
-    margin: 0 115px;
+    position: relative;
+    right: 58px;
 }
 
 @media(max-width: 623px){
@@ -632,6 +633,14 @@ input{
     .rate-it {
         width: 106px;
     }
+}
+
+
+@media(max-width: 540px){  
+    .hamburger {
+        margin: 16px 4px;
+    }
+
 }
 
 @media(max-width: 437px){
@@ -645,7 +654,26 @@ input{
         padding: 13px 8px;
     }
     .rate-it {
-        width: 106px;
+        width: 76px;
+    }
+    .sec-items {
+        font-size: 12px;
+    }
+    .hamburger {
+        margin: 15px 0;
+    }
+
+    .menu {
+        padding: 197px 0 135px 36px;
+    }
+    .header.active {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .card {
+        width: 86%;
     }
 }
 

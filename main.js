@@ -73,3 +73,25 @@ window.onload = () => {
         consentPopup.classList.remove("hidden");
     }
 }
+
+
+const search = () => {
+    const search = document.getElementById("search-item").value.toUpperCase();
+    const storeItems = document.getElementById("user-cards");
+    const product = document.querySelectorAll(".card");
+    const productName = storeItems.getElementsByTagName("h5");
+
+    for(let i = 0; i < productName.length; i++) {
+            let match = product[i].getElementsByClassName("header")[0];
+            if(match){
+                let textValue = match.textContent || match.innerHTML;
+                if(textValue.toUpperCase().indexOf(search) > -1){
+                    product[i].style.display = "";
+            } else {
+                product[i].style.display = "none";
+            }
+        }
+    }
+}
+
+search();
